@@ -1,23 +1,22 @@
 package lbrtsans
 
-import "log"
 import _ "embed"
-import "github.com/tinne26/etxt"
+import "golang.org/x/image/font/sfnt"
 
-//go:embed LiberationSans-Regular.ttf.gz
-var gzBytes []byte
+//go:embed LiberationSans-Regular.ttf
+var bytes []byte
 
-var cachedFont *etxt.Font
+var cachedFont *sfnt.Font
 
-func GzBytes() []byte { return gzBytes }
-func FreeFont() { cachedFont = nil }
-func Font() *etxt.Font {
+func Release() { cachedFont = nil }
+func Name() string { return "Liberation Sans" }
+func Font() *sfnt.Font {
 	if cachedFont != nil { return cachedFont }
 	
 	var err error
-	cachedFont, _, err = etxt.ParseFontBytes(gzBytes)
+	cachedFont, err = sfnt.Parse(bytes)
 	if err != nil {
-		log.Fatal("tinne26/fonts broken version testing: " + err.Error())
+		panic("tinne26/fonts broken version testing: " + err.Error())
 	}
 	return cachedFont
 }
