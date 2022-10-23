@@ -1,8 +1,8 @@
 # Free latin fonts
 
-This project exposes a fonts (latin-ext only) in a similar style to the [go-fonts](https://github.com/go-fonts) repositories, but using `embed` and providing the `*sfnt.Font` right away.
+This project exposes fonts (latin-ext only) in a similar style to the [go-fonts](https://github.com/go-fonts) repositories, but using `embed` and transparently loading the `*sfnt.Font` right away.
 
-This project was made mostly for personal use and to make it easier to write code examples that use my own [etxt](https://github.com/tinne26/etxt) text rendering package (Golang / Ebitengine).
+This project was made mostly for personal use, to make it easier to write code examples that use [etxt](https://github.com/tinne26/etxt) text rendering package (Golang / Ebitengine).
 
 ## Licenses
 
@@ -40,4 +40,4 @@ The names of the subpackages and their paths match what you can find in this rep
 Font names are shortened in funny ways, but they get too long and repetitive for my taste otherwise:
 - **Liberation Sans** | *sans-serif, regular, neutral* | `github.com/tinne26/fonts/liberation/lbrtsans`
 - **Liberation Serif** | *serif, regular, neutral* | `github.com/tinne26/fonts/liberation/lbrtserif`
-- **Liberation Mono** | *monospaced, regular, neutral* | `github.com/tinne26/fonts/liberation/lbrtmono`
+- **Liberation Mono** | *monospace, regular, neutral* | `github.com/tinne26/fonts/liberation/lbrtmono`
