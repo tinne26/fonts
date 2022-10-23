@@ -28,9 +28,9 @@ import "github.com/tinne26/fonts/liberation/lbrtserif"
 
 func main() {
 	renderer := etxt.NewStdRenderer()
-	renderer.SetFont(lbtserif.Font())
+	renderer.SetFont(lbrtserif.Font())
 	rect := renderer.SelectionRect("please measure me")
-	fmt.Printf("%dx%d pixels", rect.Width.Ceil(), rect.Height.Ceil())
+	fmt.Printf("%dx%d pixels\n", rect.Width.Ceil(), rect.Height.Ceil())
 }
 ```
 The names of the subpackages and their paths match what you can find in this repository.
