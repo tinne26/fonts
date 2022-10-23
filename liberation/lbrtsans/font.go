@@ -1,7 +1,7 @@
 package lbrtsans
 
 import "log"
-import "embed"
+import _ "embed"
 import "github.com/tinne26/etxt"
 
 //go:embed LiberationSans-Regular.ttf.gz

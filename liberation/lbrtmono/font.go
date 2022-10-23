@@ -1,7 +1,7 @@
 package lbrtmono
 
 import "log"
-import "embed"
+import _ "embed"
 import "github.com/tinne26/etxt"
 
 //go:embed LiberationMono-Regular.ttf.gz
