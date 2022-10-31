@@ -1,8 +1,8 @@
 # Free latin fonts
 
-This project exposes fonts (latin-ext only) in a similar style to the [go-fonts](https://github.com/go-fonts) repositories, but using `embed` and transparently loading the `*sfnt.Font` right away.
+This project exposes fonts (latin-ext only) in a similar way to the [go-fonts](https://github.com/go-fonts) repositories, but using `embed` and transparently loading the `*sfnt.Font` right away.
 
-This project was made mostly for personal use, to make it easier to write code examples that use [etxt](https://github.com/tinne26/etxt) text rendering package (Golang / Ebitengine).
+This project was made mostly for personal use, to make it easier to write code examples that use the [etxt](https://github.com/tinne26/etxt) text rendering package (Golang / [Ebitengine](https://github.com/hajimehoshi/ebiten)).
 
 ## Licenses
 
