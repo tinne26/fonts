@@ -1,0 +1,7 @@
+go 1.19
+
+use (
+	./liberation/lbrtmono
+	./liberation/lbrtsans
+	./liberation/lbrtserif
+)
